@@ -1,7 +1,7 @@
 import { useStatQuery } from "@/entities/dashboardStats/api/statQueries"
 import ApplicationProgress from "@/widgets/application-progress/ui/ApplicationProgress";
 import RecentApplications from "@/widgets/recent-applications/ui/RecentApplications";
-import { StatsSummary } from "@/widgets/stats-summary/ui/statsSummary";
+import { StatsSummary } from "@/widgets/stats-summary/ui/StatsSummary";
 
 export const Dashboard = (props) => {
     const { data, isLoading, error } = useStatQuery();
