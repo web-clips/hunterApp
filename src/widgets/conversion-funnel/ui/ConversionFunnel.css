@@ -1,0 +1,75 @@
+.conversion__funnel {
+    .conversion__funnel__title {
+        font-size: 16px;
+        color: #171717;
+        letter-spacing: -0.7px;
+    }
+
+    .conversion__stats {
+        padding: 0 10px;
+    }
+
+    .conversion__item {
+        margin-top: 15px;
+    }
+
+    .conversion__heads {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .conversion__label {
+        font-size: 14px;
+        letter-spacing: -2%;
+        color: #171717;
+    }
+
+    .conversion__percent {
+        font-size: 14px;
+        letter-spacing: -2%;
+        color: #171717;
+
+        span {
+            color: #C4C4C4;
+        }
+    }
+
+    .conversion__line {
+        width: 100%;
+        height: 6px;
+        background-color: #DDE9EB;
+        border-radius: 50px;
+
+        div {
+            height: 100%;
+        }
+    }
+
+    .conversion__metrics {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap:20px;
+        width:100%;
+        margin-top: 25px;
+        .metric__item{
+            width:48%;
+            height:78px;
+            background-color: #edf5f6;
+            border-radius: 16px;
+            padding:14px 20px;
+            h3{
+                font-size:10px;
+                letter-spacing: -3%;
+            }
+            p{
+                color:#171717;
+                font-size:20px;
+                letter-spacing: -3%;
+                font-weight: 700;
+            }
+        }
+    }
+}

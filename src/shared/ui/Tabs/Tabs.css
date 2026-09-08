@@ -1,0 +1,32 @@
+.tabs{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border:1px solid #E5E5E5;
+    height:40px;
+    border-radius: 14px;
+    padding:5px;
+    width:507px;
+}
+.tabs__item{
+    background-color: transparent;
+    color:#777777;
+    border:none;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    height:100%;
+    padding:0 15px;
+    border-radius: 10px;
+}
+.tabs__item span{
+    color:#D5D5D5;
+}
+.tabs__item__active{
+    background-color: #2686E0;
+    color:#fff;
+    
+}
+.tabs__item__active span{
+    color:#b2daff;
+}

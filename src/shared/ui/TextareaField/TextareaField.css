@@ -1,0 +1,14 @@
+.form-field textarea {
+    width: 100%;
+    background-color: rgba(217, 217, 217, .3);
+    padding: 18px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(173, 173, 173, .3);
+    color: #626262;
+    font-family: "Inter", sans-serif;
+
+}
+
+.form-field textarea::placeholder {
+    font-family: "Inter", sans-serif;
+}

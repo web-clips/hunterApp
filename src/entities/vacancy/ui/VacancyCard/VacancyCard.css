@@ -1,0 +1,124 @@
+.vacancy__card {
+    width: 350px;
+    height: 268px;
+    border: 1px solid #E5E5E5;
+    padding: 20px 20px 21px;
+    background-color: #fff;
+    letter-spacing: -1%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.vacancy__card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px -5px #dfdfdf;
+}
+
+.vacancy__card__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-bottom: 1px solid #F8F8F8;
+    padding-bottom: 10px;
+}
+
+.vacancy__card__head__heading__title {
+    font-size: 15px;
+    color: #3A3838;
+}
+
+.vacancy__card__head__heading__company {
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.vacancy__card__head__status {
+    padding: 0px 10px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #D337FE;
+    background-color: #FBECFF;
+    letter-spacing: -0.7px;
+}
+
+.vacancy__card__status__dot {
+    width: 4px;
+    height: 4px;
+    background-color: #D337FE;
+    border-radius: 50%;
+}
+
+.vacancy__card__info {
+    margin-top: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.vacancy__card__info__item {
+    width: 50%;
+    height: 55px;
+    padding: 12px;
+    background-color: rgba(217, 217, 217, .3);
+    border-radius: 12px;
+}
+
+.vacancy__card__info__item__label {
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 1;
+    color: #BDBDBD;
+}
+
+.vacancy__card__info__item__value {
+    font-size: 11px;
+    font-weight: 600;
+
+}
+
+.vacancy__card__desc {
+    color: #8F8F8F;
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 16px;
+    letter-spacing: -0.7px;
+}
+
+.vacancy__card__footer {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    gap:10px;
+
+}
+
+.vacancy__card__footer__button {
+    width: 126px;
+    height: 39px;
+    background-color: #4EE38A;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+}
+
+.vacancy__card__footer__salary {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2686E0;
+    background-color: rgba(42, 162, 255, .24);
+    width:100%;
+    height:39px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: -0.7px;
+}

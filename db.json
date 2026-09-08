@@ -1,0 +1,340 @@
+{
+  "profile": {
+    "id": "1",
+    "fullName": "Alex Kim",
+    "email": "alex@email.com",
+    "avatarInitials": "AK"
+  },
+  "preferences": {
+    "defaultStatus": "applied",
+    "currency": "USD",
+    "currencySymbol": "$"
+  },
+  "navigation": [
+    {
+      "id": "1",
+      "label": "Dashboard",
+      "labelRu": "Панель управления",
+      "path": "/",
+      "icon": "LayoutDashboard"
+    },
+    {
+      "id": "2",
+      "label": "Vacancies",
+      "labelRu": "Вакансии",
+      "path": "/vacancies",
+      "icon": "BriefcaseBusiness"
+    },
+    {
+      "id": "3",
+      "label": "Analytics",
+      "labelRu": "Аналитика",
+      "path": "/analytics",
+      "icon": "ChartBar"
+    },
+    {
+      "id": "4",
+      "label": "Settings",
+      "labelRu": "Настройки",
+      "path": "/settings",
+      "icon": "Settings"
+    }
+  ],
+  "statuses": [
+    {
+      "id": "all",
+      "label": "All",
+      "labelRu": "Все",
+      "color": "gray"
+    },
+    {
+      "id": "applied",
+      "label": "Applied",
+      "labelRu": "Откликнулся",
+      "color": "blue"
+    },
+    {
+      "id": "interview",
+      "label": "Interview",
+      "labelRu": "Собеседование",
+      "color": "purple"
+    },
+    {
+      "id": "offer",
+      "label": "Offer",
+      "labelRu": "Оффер",
+      "color": "green"
+    },
+    {
+      "id": "rejected",
+      "label": "Rejected",
+      "labelRu": "Отказ",
+      "color": "red"
+    }
+  ],
+  "dashboardStats": [
+    {
+      "id": "1",
+      "title": "Total",
+      "titleRu": "Всего",
+      "value": 6,
+      "subtitle": "All applications",
+      "subtitleRu": "Все отклики",
+      "icon": "Inbox"
+    },
+    {
+      "id": "2",
+      "title": "Applied",
+      "titleRu": "Откликнулся",
+      "value": 2,
+      "subtitle": "Awaiting response",
+      "subtitleRu": "Ожидают ответа",
+      "icon": "FileCheck",
+      "status": "applied"
+    },
+    {
+      "id": "3",
+      "title": "Interview",
+      "titleRu": "Собеседование",
+      "value": 2,
+      "subtitle": "In progress",
+      "subtitleRu": "В процессе",
+      "icon": "Users",
+      "status": "interview"
+    },
+    {
+      "id": "4",
+      "title": "Rejected",
+      "titleRu": "Отказ",
+      "value": 1,
+      "subtitle": "Not selected",
+      "subtitleRu": "Не выбрали",
+      "icon": "CircleX",
+      "status": "rejected"
+    },
+    {
+      "id": "5",
+      "title": "Offer",
+      "titleRu": "Оффер",
+      "value": 1,
+      "subtitle": "Congratulations!",
+      "subtitleRu": "Поздравляем!",
+      "icon": "BadgeCheck",
+      "status": "offer"
+    }
+  ],
+  "applications": [
+    {
+      "id": "1",
+      "position": "Senior Frontend Engineer",
+      "company": "Stripe",
+      "companyInitials": "ST",
+      "status": "interview",
+      "salaryFrom": 140000,
+      "salaryTo": 170000,
+      "currency": "USD",
+      "location": "Remote",
+      "workFormat": "remote",
+      "appliedDate": "2025-05-28",
+      "source": "Company website",
+      "postingUrl": "https://example.com/stripe-frontend",
+      "notes": "Had a great first call with the recruiter. Technical screen scheduled for next Thursday. Strong match on React and TypeScript.",
+      "nextAction": "Prepare for technical interview",
+      "nextActionDate": "2025-06-05",
+      "createdAt": "2025-05-28T10:00:00.000Z",
+      "updatedAt": "2025-05-29T15:30:00.000Z"
+    },
+    {
+      "id": "2",
+      "position": "Product Designer",
+      "company": "Linear",
+      "companyInitials": "LI",
+      "status": "applied",
+      "salaryFrom": 120000,
+      "salaryTo": 145000,
+      "currency": "USD",
+      "location": "San Francisco, CA",
+      "workFormat": "office",
+      "appliedDate": "2025-05-25",
+      "source": "LinkedIn",
+      "postingUrl": "https://example.com/linear-designer",
+      "notes": "Applied via LinkedIn. Company builds tools for software teams.",
+      "nextAction": "Wait for recruiter response",
+      "nextActionDate": null,
+      "createdAt": "2025-05-25T12:00:00.000Z",
+      "updatedAt": "2025-05-25T12:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "position": "Full Stack Developer",
+      "company": "Notion",
+      "companyInitials": "NO",
+      "status": "offer",
+      "salaryFrom": 130000,
+      "salaryTo": 155000,
+      "currency": "USD",
+      "location": "New York, NY",
+      "workFormat": "office",
+      "appliedDate": "2025-05-15",
+      "source": "Referral",
+      "postingUrl": "https://example.com/notion-fullstack",
+      "notes": "Got the offer! $145k + equity. Reviewing the package details this week. Need to decide by June 10.",
+      "nextAction": "Review offer package",
+      "nextActionDate": "2025-06-10",
+      "createdAt": "2025-05-15T09:00:00.000Z",
+      "updatedAt": "2025-06-01T18:20:00.000Z"
+    },
+    {
+      "id": "4",
+      "position": "React Native Developer",
+      "company": "Coinbase",
+      "companyInitials": "CO",
+      "status": "rejected",
+      "salaryFrom": 125000,
+      "salaryTo": 150000,
+      "currency": "USD",
+      "location": "Remote",
+      "workFormat": "remote",
+      "appliedDate": "2025-05-10",
+      "source": "Company website",
+      "postingUrl": "https://example.com/coinbase-react-native",
+      "notes": "They moved forward with another candidate. Good feedback — recommended to apply again in 6 months.",
+      "nextAction": null,
+      "nextActionDate": null,
+      "createdAt": "2025-05-10T13:00:00.000Z",
+      "updatedAt": "2025-05-20T11:45:00.000Z"
+    },
+    {
+      "id": "5",
+      "position": "Staff Engineer",
+      "company": "Vercel",
+      "companyInitials": "VE",
+      "status": "applied",
+      "salaryFrom": 160000,
+      "salaryTo": 200000,
+      "currency": "USD",
+      "location": "Remote",
+      "workFormat": "remote",
+      "appliedDate": "2025-06-01",
+      "source": "LinkedIn",
+      "postingUrl": "https://example.com/vercel-staff-engineer",
+      "notes": "Reached out to the hiring manager on LinkedIn first. Exciting role working on Next.js infrastructure.",
+      "nextAction": "Follow up with hiring manager",
+      "nextActionDate": "2025-06-05",
+      "createdAt": "2025-06-01T08:30:00.000Z",
+      "updatedAt": "2025-06-01T08:30:00.000Z"
+    },
+    {
+      "id": "6",
+      "position": "UI Engineer",
+      "company": "Figma",
+      "companyInitials": "FI",
+      "status": "interview",
+      "salaryFrom": 135000,
+      "salaryTo": 165000,
+      "currency": "USD",
+      "location": "San Francisco, CA",
+      "workFormat": "hybrid",
+      "appliedDate": "2025-05-20",
+      "source": "Company website",
+      "postingUrl": "https://example.com/figma-ui-engineer",
+      "notes": "Second round interview scheduled. Will include a home design system exercise.",
+      "nextAction": "Complete design system exercise",
+      "nextActionDate": "2025-06-03",
+      "createdAt": "2025-05-20T14:10:00.000Z",
+      "updatedAt": "2025-05-30T16:40:00.000Z"
+    }
+  ],
+  "analytics": {
+    "applicationsByStatus": [
+      {
+        "status": "applied",
+        "label": "Applied",
+        "labelRu": "Откликнулся",
+        "value": 2
+      },
+      {
+        "status": "interview",
+        "label": "Interview",
+        "labelRu": "Собеседование",
+        "value": 2
+      },
+      {
+        "status": "rejected",
+        "label": "Rejected",
+        "labelRu": "Отказ",
+        "value": 1
+      },
+      {
+        "status": "offer",
+        "label": "Offer",
+        "labelRu": "Оффер",
+        "value": 1
+      }
+    ],
+    "conversionFunnel": [
+      {
+        "id": "1",
+        "label": "Applied",
+        "labelRu": "Откликнулся",
+        "value": 6,
+        "percent": 100
+      },
+      {
+        "id": "2",
+        "label": "Got Interview",
+        "labelRu": "Получил собеседование",
+        "value": 3,
+        "percent": 50
+      },
+      {
+        "id": "3",
+        "label": "Got Offer",
+        "labelRu": "Получил оффер",
+        "value": 1,
+        "percent": 17
+      }
+    ],
+    "summary": {
+      "interviewRate": 50,
+      "offerRate": 17,
+      "totalApplied": 6,
+      "active": 4
+    }
+  },
+  "notifications": [
+    {
+      "id": "1",
+      "type": "interview",
+      "title": "Interview tomorrow",
+      "titleRu": "Собеседование завтра",
+      "message": "You have an interview for UI Engineer at Figma.",
+      "messageRu": "У вас собеседование на позицию UI Engineer в Figma.",
+      "applicationId": "6",
+      "isRead": false,
+      "createdAt": "2025-06-02T09:00:00.000Z"
+    },
+    {
+      "id": "2",
+      "type": "follow_up",
+      "title": "Follow up reminder",
+      "titleRu": "Напоминание написать HR",
+      "message": "Follow up with the hiring manager at Vercel.",
+      "messageRu": "Напишите hiring manager в Vercel.",
+      "applicationId": "5",
+      "isRead": false,
+      "createdAt": "2025-06-04T10:00:00.000Z"
+    },
+    {
+      "id": "3",
+      "type": "deadline",
+      "title": "Offer deadline",
+      "titleRu": "Дедлайн по офферу",
+      "message": "You need to decide on the Notion offer by June 10.",
+      "messageRu": "Нужно принять решение по офферу от Notion до 10 июня.",
+      "applicationId": "3",
+      "isRead": true,
+      "createdAt": "2025-06-01T12:00:00.000Z"
+    }
+  ]
+}
