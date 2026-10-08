@@ -6,60 +6,55 @@ import { Settings } from "@/pages/Settings";
 import Vacancies from "@/pages/Vacancies";
 import { VacancyDetails } from "@/pages/VacancyDetails";
 import { Layout } from "@/widgets/layout/Layout";
-import { createBrowserRouter, Route, Routes } from "react-router-dom";
+
+import { createBrowserRouter } from "react-router-dom";
+import { ProtectedRoute } from "./ProtectedRoute";
+import { PublicRoute } from "./PublicRoute";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
-    element: <Layout />,
+    element: <ProtectedRoute />,
     children: [
       {
-        index: true,
-        element: <Dashboard />,
+        path: "/",
+        element: <Layout />,
+        children: [
+          {
+            index: true,
+            element: <Dashboard />,
+          },
+          {
+            path: "applications",
+            element: <Vacancies />,
+          },
+          {
+            path: "applications/:id",
+            element: <VacancyDetails />,
+          },
+          {
+            path: "analytics",
+            element: <Analytics />,
+          },
+          {
+            path: "settings",
+            element: <Settings />,
+          },
+        ],
       },
     ],
   },
   {
-    path: "/applications",
-    element: <Layout />,
+    element: <PublicRoute />,
     children: [
       {
-        index: true,
-        element: <Vacancies />,
+        path: "/login",
+        element: <Auth />,
       },
       {
-        path: ":id",
-        element: <VacancyDetails />,
+        path: "/register",
+        element: <Auth />,
       },
     ],
-  },
-  {
-    path: "/analytics",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Analytics />,
-      },
-    ],
-  },
-  {
-    path: "/settings",
-    element: <Layout />,
-    children: [
-      {
-        index: true,
-        element: <Settings />,
-      },
-    ],
-  },
-  {
-    path: "/login",
-    element: <Auth />,
-  },
-  {
-    path: "/register",
-    element: <Auth />,
   },
   {
     path: "*",

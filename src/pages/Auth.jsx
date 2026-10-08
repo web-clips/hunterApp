@@ -14,6 +14,12 @@ const Auth = () => {
     useRegisterMutation();
   const location = useLocation();
 
+  const from = location.state?.from;
+
+  const redirectTo = from
+    ? `${from.pathname}${from.search || ""}${from.hash || ""}`
+    : "/applications";
+
   const login = location.pathname === "/login";
   const [form, setForm] = useState({
     name: "",
@@ -28,6 +34,14 @@ const Auth = () => {
   });
 
   const [serverError, setServerError] = useState("");
+
+  const handleAuthSuccess = (data) => {
+    localStorage.setItem("token", data.token);
+
+    navigate(redirectTo, {
+      replace: true,
+    });
+  };
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -76,12 +90,7 @@ const Auth = () => {
           password: form.password,
         },
         {
-          onSuccess: (data) => {
-            localStorage.setItem("token", data.token);
-            navigate("/applications", {
-              replace: true,
-            });
-          },
+          onSuccess: handleAuthSuccess,
           onError: (error) => {
             setServerError(error.response?.data?.message || "Произошла ошибка");
           },
@@ -95,12 +104,7 @@ const Auth = () => {
           password: form.password,
         },
         {
-          onSuccess: (data) => {
-            localStorage.setItem("token", data.token);
-            navigate("/applications", {
-              replace: true,
-            });
-          },
+          onSuccess: handleAuthSuccess,
           onError: (error) => {
             setServerError(error.response?.data?.message || "Произошла ошибка");
           },
@@ -166,7 +170,7 @@ const Auth = () => {
           {serverError && <span className="errorMessage">{serverError}</span>}
           <p>
             {login ? "Если у вас нет аккаунта?" : "У меня уже есть аккаунт"}
-            <Link to={login ? "/register" : "/login"}>
+            <Link to={login ? "/register" : "/login"} state={location.state}>
               {login ? "Зарегистрироваться" : "Войти"}
             </Link>
           </p>
