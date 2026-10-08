@@ -12,6 +12,7 @@ const Vacancies = () => {
 
     const [statusTab, setStatusTab] = useState("all")
 
+
     if (isLoading) return <div>Загрузка...</div>;
     if (error) return <div>Ошибка загрузкиА</div>;
 

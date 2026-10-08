@@ -1,0 +1,25 @@
+.overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+}
+
+.notifications__box {
+    position: absolute;
+    z-index: 11;
+    background-color: rgb(255, 255, 255);
+    width:400px;
+    height:300px;
+    border-radius: 20px;
+    right:25px;
+    top:calc(100% + 15px);
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 5px 20px -5px #dfdfdf;
+    padding:15px;
+}
+.notifications__box h3{
+    font-size:14px;
+    font-weight: 500;
+    letter-spacing: -1%;
+    color:#626262;
+}

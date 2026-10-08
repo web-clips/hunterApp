@@ -1,8 +1,11 @@
+import { Link } from 'react-router-dom';
 import './VacancyCard.css'
 
 
 export default function VacancyCard(props) {
-    const { status,
+    const {
+        id,
+        status,
         company,
         salaryFrom,
         salaryTo,
@@ -64,9 +67,11 @@ export default function VacancyCard(props) {
                 <div className="vacancy__card__footer__salary">
                     от {salaryFrom} до {salaryTo} {currency}
                 </div>
-                <button className="vacancy__card__footer__button">
-                    Подробнее
-                </button>
+                <Link to={`/applications/${id}`}>
+                    <button className="vacancy__card__footer__button">
+                        Подробнее
+                    </button>
+                </Link>
             </div>
         </div>
     )

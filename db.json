@@ -243,6 +243,66 @@
       "nextActionDate": "2025-06-03",
       "createdAt": "2025-05-20T14:10:00.000Z",
       "updatedAt": "2025-05-30T16:40:00.000Z"
+    },
+    {
+      "position": "BackendDeveloper",
+      "company": "meta",
+      "companyInitials": "ME",
+      "status": "interview",
+      "salaryFrom": 3000000,
+      "salaryTo": 3000000,
+      "currency": "KZT",
+      "location": "",
+      "workFormat": "Full-time",
+      "appliedDate": "2026-09-15",
+      "source": "Manual",
+      "postingUrl": "https://www.meta.com",
+      "notes": "meta company",
+      "nextAction": "",
+      "nextActionDate": "",
+      "createdAt": "2026-09-15T11:32:52.348Z",
+      "updatedAt": "2026-09-15T11:32:52.348Z",
+      "id": "fwWLQSDR9uo"
+    },
+    {
+      "position": "Full Stack developer",
+      "company": "youtube",
+      "companyInitials": "YO",
+      "status": "interview",
+      "salaryFrom": 2000000,
+      "salaryTo": 2000000,
+      "currency": "KZT",
+      "location": "",
+      "workFormat": "Hybrid",
+      "appliedDate": "2026-09-15",
+      "source": "Manual",
+      "postingUrl": "https://www.youtube.com",
+      "notes": "asdasd",
+      "nextAction": "",
+      "nextActionDate": "",
+      "createdAt": "2026-09-15T11:34:51.146Z",
+      "updatedAt": "2026-09-15T11:34:51.146Z",
+      "id": "qBsEAc7uFJg"
+    },
+    {
+      "position": "Google",
+      "company": "g",
+      "companyInitials": "G",
+      "status": "applied",
+      "salaryFrom": 2131231,
+      "salaryTo": 2131231,
+      "currency": "KZT",
+      "location": "",
+      "workFormat": "Remote",
+      "appliedDate": "2026-09-15",
+      "source": "Manual",
+      "postingUrl": "sdfsdfsdf",
+      "notes": "sdfsdf",
+      "nextAction": "",
+      "nextActionDate": "",
+      "createdAt": "2026-09-15T11:35:33.696Z",
+      "updatedAt": "2026-09-15T11:35:33.696Z",
+      "id": "T5OrzNtXN3Y"
     }
   ],
   "analytics": {
@@ -336,5 +396,6 @@
       "isRead": true,
       "createdAt": "2025-06-01T12:00:00.000Z"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

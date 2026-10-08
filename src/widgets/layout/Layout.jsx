@@ -8,7 +8,6 @@ import { Outlet } from "react-router-dom"
 
 export const Layout = () => {
     const [isVacancyModalOpen, setIsVacancyModalOpen] = useState(false);
-    console.log(isVacancyModalOpen)
     return (
         <div>
             <Header

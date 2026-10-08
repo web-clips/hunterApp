@@ -1,5 +1,6 @@
 import ApplicationCard from "@/entities/applications/ApplicationCard";
 import { useRecentApplicationsQuery } from "@/entities/dashboardRecentApplications/api/recentApplicationsQueries";
+import { Link } from "react-router-dom";
 
 
 
@@ -13,7 +14,7 @@ const RecentApplications = () => {
         <div className="recent__applications">
             <div className="recent__applications__row">
                 <h2>Последние отклики</h2>
-                <a href="">Смотреть все</a>
+                <Link to="/applications">Смотреть все</Link>
             </div>
             <div className="applications">
                 {

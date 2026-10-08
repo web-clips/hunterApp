@@ -84,6 +84,11 @@ main {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #E5E5E5;
+  img{
+    width:100%;
+    height:100%;
+    padding:20px 20px 20px;
+  }
 }
 
 .sidebar nav {
@@ -126,6 +131,8 @@ header {
   padding: 12px 25px;
   display: flex;
   align-items: center;
+  background-color: #fff;
+  z-index: 100;
 }
 
 .header__search {
@@ -181,7 +188,8 @@ header {
 .panel {
   padding-top: 35px;
   background-color: #F3F4F8;
-  height: calc(100vh - 60px);
+  height: calc(100% - 60px);
+  padding-bottom: 35px;
 }
 
 .panel__header {
@@ -525,13 +533,203 @@ header {
     color: #171717
   }
 }
-.btn{
-  padding:17px 56px 18px;
+
+.btn {
+  padding: 17px 56px 18px;
   display: block;
   border-radius: 16px;
-  border:none;
+  border: none;
   background-color: #2686E0;
-  font-size:14px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: -1%;
+}
+
+
+/* vacancyDetail */
+
+.panel__vacancy__window {
+  width: 543px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 24px 20px;
+  margin: 0 auto;
+}
+
+.panel__vacancy--title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3A3838;
+  letter-spacing: -1%;
+  line-height: .8;
+}
+
+.panel__vacancy--company {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: -1%;
+  color: #626262;
+  line-height: .8;
+}
+
+.panel__vacancy--header {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #F8F8F8;
+  margin-bottom: 17px;
+}
+
+.vacancy__card__head__status {
+  margin-left: auto;
+}
+
+.panel__vacancy--info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F8F8F8;
+}
+
+.panel--info__item {
+  width: 30%;
+  height: auto;
+  background-color: rgba(217, 217, 217, .3);
+  padding: 12px 14px;
+  border-radius: 12px;
+
+
+}
+
+.panel--info__item:nth-child(2) {
+  width: 50%;
+}
+
+.panel--info__item__label {
+  font-size: 12px;
+  color: #BDBDBD;
+  font-weight: 400;
+  letter-spacing: -1%;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.panel--info__item__value {
+  font-size: 12px;
+  color: #626262;
+  font-weight: 600;
+  letter-spacing: -1%;
+  line-height: 1;
+}
+
+.panel__vacancy--desc {
+  padding: 20px 0;
+  border-bottom: 1px solid #F8F8F8;
+}
+
+.panel--desc__title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3A3838;
+  letter-spacing: -1%;
+}
+
+.panel--desc__text {
+  font-size: 11px;
+  font-weight: 400;
+  color: #8F8F8F;
+  letter-spacing: -1%;
+  line-height: 1.5;
+}
+
+.panel__vacancy--link {
+  padding: 20px 0;
+  border-bottom: 1px solid #F8F8F8;
+
+  a {
+    color: #4000FF;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: -1%;
+    text-decoration: none;
+  }
+}
+
+.panel__vacancy--bottom {
+  padding: 25px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.panel--bottom__delete {
+  button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #FF4C4C;
+    letter-spacing: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    transition: .5s;
+
+    &:hover {
+      background-color: rgba(217, 217, 217, .2);
+      border-radius: 12px;
+    }
+  }
+}
+
+.panel--bottom__edit {
+  button {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: -1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 165px;
+    height: 50px;
+    background-color: #2686E0;
+    border: none;
+    border-radius: 12px;
+    transition: .5s;
+
+    &:hover {
+      background-color: #1372ca;
+    }
+  }
+}
+
+.auth__wrapper{
+  display: flex;
+  align-items: center;
+  height:100vh;
+  padding:7px;
+}
+.auth__content{
+  width:50%;
+  height:100%;
+  background:linear-gradient(63deg, #4FC5EB,#5D52D9);
+  border-radius: 16px;
+}
+.auth__form{
+  width:50%;
+  height:100%;
+}
+.errorMessage{
+  color:rgb(230, 50, 18);
+  font-size:10px;
+  font-weight: 600;
+  letter-spacing: -1%;
+  display: block;
+  line-height: 1.2;
+  margin:3px 0;
 }

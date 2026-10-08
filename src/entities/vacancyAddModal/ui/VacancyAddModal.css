@@ -34,11 +34,22 @@
     }
 }
 
+.form__roll {
+    overflow-y: scroll;
+    height: 550px;
+    scrollbar-width: none;
+}
+
+.form__roll::-webkit-scrollbar {
+    display: none;
+}
+
 .modal__form {
     display: flex;
     flex-direction: column;
     padding: 22px 30px 24px;
     gap: 10px;
+
 
     .form-field {
         gap: 5px;
@@ -69,10 +80,11 @@
 
         .save--btn {
             background-color: #2686E0;
-            color:#fff;
+            color: #fff;
         }
     }
-    .modal__wrap--actions{
+
+    .modal__wrap--actions {
         margin-top: 15px;
     }
 }

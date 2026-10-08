@@ -1,4 +1,5 @@
 import { Bell, Plus, Search } from 'lucide-react'
+import { NotificationsDropdown } from './notificationsDropdown/ui/NotificationsDropdown'
 export const Header = ({ onAddVacancy }) => {
 
     return (
@@ -8,7 +9,7 @@ export const Header = ({ onAddVacancy }) => {
                 <input type="search" placeholder='Поиск вакансий...' />
             </div>
             <div className="header__notify">
-                <button><Bell size={16} color='#777' /></button>
+                <NotificationsDropdown />
             </div>
             <div className="header__add__btn">
                 <button onClick={onAddVacancy}><Plus size={14} />Добавить вакансию</button>
